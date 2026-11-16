@@ -1,0 +1,56 @@
+header {
+    background-color: #DB742B;
+    padding: 0.5rem;
+
+    & li {
+        list-style: none;
+    }
+
+    & ul > li {
+        width: 50%;
+    }
+
+    & ul {
+        width: 100%;
+    }
+}
+
+body {
+    margin: 0;
+}
+
+.headerNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0;
+    gap: 5%
+    
+}
+.headerNavButton {
+    width: 7.5%;
+}
+
+.headerNavli {
+    display: flex;
+    align-items: center;
+    padding-right: 5%;
+}
+
+.footerNavRS {
+    & li::after {
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+#discord::after {
+    content: url(../img/discord.png);
+}
+#instagram::after {
+    content: url(../img/instagram.png);
+}
+#facebook::after {
+    content: url(../img/facebook.png);
+}
