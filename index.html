@@ -5,14 +5,14 @@
         <meta charset="utf-8">
         <title>grokeba</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/global.css">
+        <link rel="stylesheet" href="css/global.css">
     </head>
 
     <body>
         <header>
             <nav class="headerNav">
                 <ul>
-                    <li><a href="index.html" class="headerLogo" ><img src="img/Logo Grokeba minimaliste brun, orange et crème.png"></a></li>
+                    <li><a href="index.html"><img class="headerLogo" src="img/Logo Grokeba minimaliste brun, orange et crème.png"></a></li>
                     <li class="headerNavli">
                         <ul>
                             <li class="headerNavButton"><a class="headerNavButtonAccueil">Accueil</a></li>
@@ -32,25 +32,30 @@
         </section>
 
         <footer>
-            <img class="headerNavLogo" src="img/Logo Grokeba minimaliste brun, orange et crème.png">
+            <img id="footerNavLogo" src="img/Logo Grokeba minimaliste brun, orange et crème.png">
 
-            <h2>Réseaux Sociaux</h2>
-            <nav class="footerNavRS">
-                <ul>
-                    <li id="discord">Discord</li>
-                    <li id="instagram">Instagram</li>
-                    <li id="facebook">Facebook</li>
-                </ul>
-            </nav>
-
-            <h2>Visitez notre site</h2>
-            <nav>
-                <ul>
-                    <li>Accueil</li>
-                    <li>Magasin</li>
-                    <li>Panier</li>
-                </ul>
-            </nav>
+            <div class="footerDivNav" class="footerDivRS">
+                <h2>Réseaux Sociaux</h2>
+                <nav class="footerNavRS">
+                    <ul>
+                        <li id="discord">Discord</li>
+                        <li id="instagram">Instagram</li>
+                        <li id="facebook">Facebook</li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="footerDivNav" class="footerDivSite">
+                <h2>Visitez notre site</h2>
+                <nav class="footerNavSite">
+                    <ul>
+                        <li>Accueil</li>
+                        <li>Magasin</li>
+                        <li>Panier</li>
+                    </ul>
+                </nav>
+            </div>
+            
         </footer>
     </body>
 
