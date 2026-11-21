@@ -4,6 +4,8 @@
 }
 
 header {
+    position: sticky;
+    top: 0;
     background-color: #DB742B;
     padding: 0.5rem;
 
@@ -40,12 +42,14 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    flex-wrap: balance;
     padding: 0;
     gap: 5%;
     
 }
 .headerNavButton {
-    width: 17%;
+    width: 6em;
+    height: 2em;
     background-color: #FAF3DD;
     border: 0.1em solid;
     border-radius: 0.3em;
@@ -85,6 +89,11 @@ body {
     }
 }
 
+.headerNav > ul {
+    display: flex;
+    align-items: center;
+}
+
 footer {
     background-color: #198737;
     height: 10%;
@@ -92,22 +101,26 @@ footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     color: #FAF3DD;
 }
 
 #footerNavLogo {
     align-self: center;
+    margin-top: 1.5%;
     margin-left: 1.5%;
+    margin-bottom: 1.5%;
     border-top-left-radius: 0.5em;
     border-top-right-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
     border-bottom-right-radius: 2em;
+    width: 30%;
+    height: 50%;
 }
 
 .footerDivNav {
     margin-left: 3em;
     margin-right: 3em;
-    
     & h2 {
         margin-top: 0.50em;
         margin-bottom: 0.25em;
@@ -140,7 +153,7 @@ footer {
     }
     & ul > li > a:hover {
         color: #502314;
-        
+
     }
 }
 
