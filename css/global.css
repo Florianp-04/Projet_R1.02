@@ -41,7 +41,6 @@ body {
 .headerNav ul {
     display: flex;
     flex-direction: row;
-    flex-wrap: balance;
     padding: 0;
     gap: 5%;
     
