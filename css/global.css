@@ -80,7 +80,7 @@ body {
 .headerNavli {
     display: flex;
     align-items: center;
-    padding-right: 3.5em;
+    padding-right: 5em;
 
     & > ul {
         height: 50%;
