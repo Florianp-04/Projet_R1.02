@@ -20,6 +20,7 @@ h1 {
         justify-content: center;
             & > figcaption {
                 flex-grow: 2;
+                width: 75%;
             }
 
             & > fieldset {
@@ -28,7 +29,20 @@ h1 {
                 align-self: center;
                 align-items: baseline;
                 flex-wrap: nowrap;
+                border-radius: 0.5em;
             }
         }
     } 
+}
+
+.panierFormVal {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+.panierFormButton {
+    background-color: #FAF3DD;
+    box-shadow: none;
+    border-radius: 1em;
 }
