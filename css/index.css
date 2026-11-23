@@ -1,8 +1,10 @@
 ul {
     list-style: none;
+    padding: 0;
 }
 
 #APropos {
+    width: 100%;
     padding: 1em;
 }
 
@@ -30,6 +32,9 @@ ul {
 }
 
 #produitsPopulaires {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     padding: 1em;
 }
 
@@ -49,35 +54,57 @@ ul {
 }
 
 .produit {
-    list-style-type: none;
-    margin: 1em;
-    width: 100%;
+    width: 90%;
 }
 
-.provenanceProduits {
+#provenanceProduits {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1em;
 }
 
+.provenance { 
+    width: 100%;
+}
+
 #imgChampSalades {
-    width: 90%;
-    height: auto;
+    width: 100%;
     margin-top: 1em;
-    padding-left: 2em;
+    border-radius: 10px;
 }
 
 @media (min-width: 750px) {
+    #APropos {
+        width: 50%;
+    }
+
     .boutonPanier {
-        width: 20%;
+        width: 40%;
     }
     
     #flexProduits {
         flex-direction: row;
         justify-content: space-around;
     }
+
+    #produitsPopulaires {
+    flex-direction: row;
+    }
+
     .produit {
         width: 20%;
+    }
+
+    #provenanceProduits {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #imgChampSalades {
+        width: 40%;
+        height: auto;
     }
 }
