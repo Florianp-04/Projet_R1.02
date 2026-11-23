@@ -1,0 +1,83 @@
+ul {
+    list-style: none;
+}
+
+#APropos {
+    padding: 1em;
+}
+
+.boutonPanier {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid #DB742B;
+    color: #3D3D3D;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+}
+
+.boutonPanier:hover {
+    background-color: #502314;
+    color: #FAF3DD;
+    border-color : #502314;
+}
+
+#imgBanderole {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+#produitsPopulaires {
+    padding: 1em;
+}
+
+#flexProduits {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0;
+    justify-content:space-between;
+}
+
+.produitImage {
+    width: 90%;
+    height: auto;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.produit {
+    list-style-type: none;
+    margin: 1em;
+    width: 100%;
+}
+
+.provenanceProduits {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+#imgChampSalades {
+    width: 90%;
+    height: auto;
+    margin-top: 1em;
+    padding-left: 2em;
+}
+
+@media (min-width: 750px) {
+    .boutonPanier {
+        width: 20%;
+    }
+    
+    #flexProduits {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .produit {
+        width: 20%;
+    }
+}
