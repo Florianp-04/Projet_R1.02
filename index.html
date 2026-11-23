@@ -6,6 +6,7 @@
         <title>grokeba</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
 
     <body>
@@ -24,102 +25,120 @@
             </nav>
         </header>
 
-        <section>
+        
+        <section id="APropos">
+            <h1>A propos de nous</h1>
+            <p> Chez nous, vous pouvez acheter en gros tous les produits nécessaires à la production de kebab.</p>
+            <a class="boutonPanier" href="pages/Magasin.html">Remplissez votre panier</a>
+        </section>
+        
+        <img id="imgBanderole"src="img/BannièreGrokeba.png" alt="banderole kebab a generer">
+        
+        <section id="produitsPopulaires">
+            <h2>VOICI NOS PRODUITS LES PLUS POPULAIRES</h2>
             <div>
-                <h1>A propos de nous</h1>
-                <p> Chez nous, vous pouvez acheter en gros tous les produits nécessaires à la production de kebab.</p>
-                <a href="pages/Magasin.html">Remplissez votre panier</a>
+                <ul id="flexProduits">
+                    <li class="produit">
+                        <img class="produitImage" src="img/Salade.png" alt="image de salade">
+                        <h3>Salade</h3>
+                        <p> Une salade fraîche et savoureuse pour accompagner votre kebab.</p>
+                    </li>
+                    <li class="produit">
+                        <img class="produitImage" src="img/Tomates.png" alt="image de tomate">
+                        <h3>Tomate</h3>
+                        <p> Des tomates juteuses et mûres pour ajouter de la saveur à votre kebab.</p>
+                    </li>
+                    <li class="produit">
+                        <img class="produitImage" src="img/Oignons.png" alt="image d'oignon">
+                        <h3>Oignon</h3>
+                        <p> Des oignons croquants et parfumés a mettre dans votre kebab.</p>
+                    </li>
+                </ul>
             </div>
-            <div>
-                <img src="img/BannièreGrokeba.png" alt="banderole kebab a generer">
-            </div>
-            <div>
-                <h2>VOICI NOS PRODUITS LES PLUS POPULAIRES</h2>
-                <div>
-                    <ul>
-                        <li>
-                            <img src="img/Salade.png" alt="image de salade">
-                            <h3>Salade</h3>
-                            <p> Une salade fraîche et savoureuse pour accompagner votre kebab.</p>
-                        </li>
-                        <li>
-                            <img src="img/Tomates.png" alt="image de tomate">
-                            <h3>Tomate</h3>
-                            <p> Des tomates juteuses et mûres pour ajouter de la saveur à votre kebab.</p>
-                        </li>
-                        <li>
-                            <img src="img/Oignons.png" alt="image d'oignon">
-                            <h3>Oignon</h3>
-                            <p> Des oignons croquants et parfumés a mettre dans votre kebab.</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <div>
+        </section>
+
+        <section id="provenanceProduits">
+            <ul>
+                <li>
                     <h2>LA PROVENANCE DE NOS PRODUITS</h2>
+                </li>
+                <li>
+                    <h3>Salades</h3>
+                    <p>Un produit frais et de qualité, cultivé dans les meilleures conditions. Cueillit à la demande.</p>
+                </li>
+                <li>
+                    <h3>Tomates</h3>
+                    <p>Des tomates juteuses et mûres, récoltées à la perfection.</p>
+                </li>
+                <li>
+                    <h3>Oignons</h3>
+                    <p>Des oignons croquants et parfumés, sélectionnés pour leur qualité.</p>
+                </li>
+                <li>
+                    <a class="boutonPanier" href="pages/Magasin.html">Remplissez votre panier</a>
+                </li>
+            </ul>
+            <img id ="imgChampSalades" src="img/ChampSalades.png" alt="image de provenance des produits">
+        </section>
+
+        <section id="creationClients">
+            <h2>CREATION DE NOS CLIENTS</h2>
+            <ul>
+                <li>
+                    <img src="img/Client1.png" alt="image de client 1">
+                </li>
+                <li>
+                    <img src="img/Client2.png" alt="image de client 2">
+                </li>
+            </ul>
+        </section>
+
+        <section id="avisClients">
+            <h2>NOS AVIS</h2>
+            <ul>
+                <li>
+                    <p>"les meilleurs produits aux meilleurs prix ! Gouttez mes kebabs !"</p>
                     <div>
-                        <h3>Salades</h3>
-                        <p>Un produit frais et de qualité, cultivé dans les meilleures conditions. Cueillit à la demande.</p>
+                        <img src="img/Client1.png" alt="image de client 1">
+                        <ul>
+                            <li>
+                            <p>Aaron Ameur</p>
+                            </li>
+                            <li>
+                            <p>Kebabiste professionnel</p>
+                            </li>
+                        </ul>
                     </div>
+                </li>
+                <li>
+                    <p>"Mes clients n'ont jamis autant aimé mes kebabs !"</p>
                     <div>
-                        <h3>Tomates</h3>
-                        <p>Des tomates juteuses et mûres, récoltées à la perfection.</p>
-                    </div>
-                    <div>
-                        <h3>Oignons</h3>
-                        <p>Des oignons croquants et parfumés, sélectionnés pour leur qualité.</p>
-                    </div>
-                    <a href="pages/Magasin.html">Remplissez votre panier</a>
-                </div>
-                <img src="img/ChampSalades.png" alt="image de provenance des produits">
-            </div>
-            <div>
-                <h2>CREATION DE NOS CLIENTS</h2>
-                <ul>
-                    <li>
-                        <img src="img/KebabV1.png" alt="image de client 1">
-                    </li>
-                    <li>
-                        <img src="img/KebabV2.png" alt="image de client 2">
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2>NOS AVIS</h2>
-                <ul>
-                    <li>
-                        <p>"les meilleurs produits aux meilleurs prix ! Gouttez mes kebabs !"</p>
-                        <div>
-                            <img src="img/AronKebabiste.png" alt="image de client 1">
-                            <div>
-                                <p>Aaron Ameur</p>
-                                <p>Kebabiste professionnel</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>"Mes clients n'ont jamis autant aimé mes kebabs !"</p>
-                        <div>
-                            <img src="img/Client2.png" alt="image de client 2">
-                            <div>
+                        <img src="img/Client2.png" alt="image de client 2">
+                        <ul>
+                            <li>
                                 <p>Jessica</p>
+                            </li>
+                            <li>
                                 <p>Realisatrice de kebabs</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <p>"Je vais pouvoir faire du bénéfice !"</p>
-                        <div>
-                            <img src="img/Client3.png" alt="image de client 3">
-                            <div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p>"Je vais pouvoir faire du bénéfice !"</p>
+                    <div>
+                        <img src="img/Client3.png" alt="image de client 3">
+                        <ul>
+                            <li>
                                 <p>Jonathan</p>
+                            </li>
+                            <li>
                                 <p>Expert comptable</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </section>
 
         <footer>
@@ -145,8 +164,7 @@
                         <li><a href="pages/Panier.html">Panier</a></li>
                     </ul>
                 </nav>
-            </div>
-            
+            </div>  
         </footer>
     </body>
 </html>
