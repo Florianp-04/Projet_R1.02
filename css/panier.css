@@ -40,9 +40,23 @@ h1 {
     border: none;
     box-shadow: none;
     text-align: center;
+    font-size: 1em;
+    width: 5em;
+    align-self: center;
 }
 .panierFormButton {
     background-color: #FAF3DD;
+    width: 3em;
+    height: 3em;
     box-shadow: none;
     border-radius: 1em;
+    border: 0.1em solid;
+    &:hover {
+        background-color: #502314;
+        color: #FAF3DD;
+    }
+    &:active {
+        background-color: #DB742B;
+        color:#FAF3DD;
+    }
 }
