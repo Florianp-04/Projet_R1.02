@@ -8,6 +8,10 @@ h1 {
     padding-left: 0.5em;
 }
 
+section > form > h2 {
+    display: none;
+}
+
 .panierFormImg {
     width: 9em;
     height: 9em;
