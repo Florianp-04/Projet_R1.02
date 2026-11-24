@@ -28,14 +28,14 @@ ul {
 #imgBanderole {
     width: 100%;
     height: auto;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 #produitsPopulaires {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding: 1em;
+    padding: 2em;
 }
 
 #flexProduits {
@@ -53,16 +53,12 @@ ul {
     text-align: center;
 }
 
-.produit {
-    width: 90%;
-}
-
 #provenanceProduits {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1em;
+    padding: 2em;
 }
 
 .provenance { 
@@ -73,6 +69,60 @@ ul {
     width: 100%;
     margin-top: 1em;
     border-radius: 10px;
+}
+
+#creationClients {
+    padding: 2em;
+}
+
+#listeCreaClient {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imgCreaClients {
+    width: 90%;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#avisClients{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+
+}
+
+.avis {
+    border: 1px solid #3D3D3D;
+    border-radius: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;   
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.imageTextAvis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.imgAvisTaille{
+    width: 20%;
+}
+
+.textAvisTaille {
+    width: 70%;
+}
+
+.imgAvis {
+    width: 100%;
+    border-radius: 100%;
 }
 
 @media (min-width: 750px) {
@@ -106,5 +156,27 @@ ul {
     #imgChampSalades {
         width: 40%;
         height: auto;
+    }
+
+    #listeCreaClient {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .imgCreaClients {
+        width: 90%;
+    }
+
+    #listAvis {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .avis {
+        width: 30%;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 }
