@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/global.css">
         <link rel="stylesheet" href="../css/panier.css">
+        <script src="../js/panier.js" defer></script>
     </head>
 
     <body>
@@ -37,10 +38,10 @@
                                 Une salade fraiche, tout juste cueillit avant de vous être livrée.
                             </figcaption>
                             <fieldset>
-                                <button type="button" class="panierFormButton">-</button>
+                                <button type="button" class="panierFormButton" id="buttonMinusSalade">-</button>
                                 <label for="valSalade"></label>
-                                <input type="text" name="valSalade" class="panierFormVal">
-                                <button type="button" class="panierFormButton">+</button>
+                                <input type="text" name="valSalade" value="0" class="panierFormVal" id="valSalade">
+                                <button type="button" class="panierFormButton" id="buttonPlusSalade">+</button>
                             </fieldset>
                         </figure>
 
@@ -55,9 +56,9 @@
                             </figcaption>
                             <fieldset>
                                 <label></label>
-                                <button type="button" class="panierFormButton">-</button>
-                                <input type="text" class="panierFormVal">
-                                <button type="button" class="panierFormButton">+</button>
+                                <button type="button" class="panierFormButton" id="buttonMinusTomates">-</button>
+                                <input type="text" class="panierFormVal" value="0" id="valTomates">
+                                <button type="button" class="panierFormButton" id="buttonPlusTomates">+</button>
                             </fieldset>
                         </figure>
                         
@@ -73,9 +74,9 @@
                             </figcaption>
                             <fieldset>
                                 <label></label>
-                                <button type="button" class="panierFormButton">-</button>
-                                <input type="text" class="panierFormVal">
-                                <button type="button" class="panierFormButton">+</button>
+                                <button type="button" class="panierFormButton" id="buttonMinusOignons">-</button>
+                                <input type="text" class="panierFormVal" value="0" id="valOignons">
+                                <button type="button" class="panierFormButton" id="buttonPlusOignons">+</button>
                             </fieldset>
                         </figure>
                         

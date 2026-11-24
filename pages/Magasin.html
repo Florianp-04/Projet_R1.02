@@ -6,6 +6,8 @@
         <title>grokeba</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/global.css">
+        <link rel="stylesheet" href="../css/magasin.css">
+        <script src="../js/magasin.js" defer></script>
     </head>
 
     <body>
@@ -25,7 +27,75 @@
         </header>
 
         <section>
-            <h1>MAGASIN</h1>
+            <article class="startPage">
+                <h1>Magasin</h1>
+                <h2>Origine Protégé</h2>
+                <p>Poduits locaux, usines proches de chez vous.</p>
+                <a class="boutonPanier" href="Panier.html">Voir le panier</a>
+            </article>
+
+            <h2 id="titleMagasin" >NOS PRODUITS</h2>
+
+            <form>
+                <ul class="panierFormUl">
+                    <li>
+                        <figure>
+                            <img src="../img/Salade.png" class="panierFormImg">
+                            <figcaption>
+                                <h3>Salades</h3>
+                                Une salade fraiche, tout juste cueillit avant de vous être livrée.
+                            </figcaption>
+                            <fieldset>
+                                <button type="button" class="panierFormButton" id="buttonMinusSalade">-</button>
+                                <label for="valSalade"></label>
+                                <input type="text" name="valSalade" value="0" class="panierFormVal" id="valSalade">
+                                <button type="button" class="panierFormButton" id="buttonPlusSalade">+</button>
+                            </fieldset>
+                            <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
+
+                        </figure>
+
+                    </li>
+                    <li class="panierFormli">
+                        
+                        <figure>
+                            <img src="../img/Tomates.png" class="panierFormImg">
+                            <figcaption>
+                                <h3>Tomates</h3>
+                                Des tomates de bonnes qualités qui ont du goût.                         
+                            </figcaption>
+                            <fieldset>
+                                <label></label>
+                                <button type="button" class="panierFormButton" id="buttonMinusTomates">-</button>
+                                <input type="text" class="panierFormVal" value="0" id="valTomates">
+                                <button type="button" class="panierFormButton" id="buttonPlusTomates">+</button>
+                            </fieldset>
+                            <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
+
+                        </figure>
+                        
+                        
+                    </li>
+                    <li class="panierFormli">
+                        
+                        <figure>
+                            <img src="../img/Oignons.png" class="panierFormImg">
+                            <figcaption>
+                                <h3>Oignons</h3>
+                                Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
+                            </figcaption>
+                            <fieldset>
+                                <label></label>
+                                <button type="button" class="panierFormButton" id="buttonMinusOignons">-</button>
+                                <input type="text" class="panierFormVal" value="0" id="valOignons">
+                                <button type="button" class="panierFormButton" id="buttonPlusOignons">+</button>
+                            </fieldset>
+                            <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
+                        </figure>
+                        
+                    </li>
+                </ul>
+            </form>
         </section>
 
         <footer>

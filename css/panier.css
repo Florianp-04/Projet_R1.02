@@ -2,6 +2,10 @@ h1 {
     height: 3em;
     background-color: #3D3D3D;
     color: #FAF3DD;
+    display: grid;
+    min-height: 3em;
+    align-items: center;
+    padding-left: 0.5em;
 }
 
 .panierFormImg {
@@ -30,6 +34,8 @@ h1 {
                 align-items: baseline;
                 flex-wrap: nowrap;
                 border-radius: 0.5em;
+                border: 0.1em solid;
+                border-color: #DB742B;
             }
         }
     } 
@@ -44,6 +50,7 @@ h1 {
     width: 5em;
     align-self: center;
 }
+
 .panierFormButton {
     background-color: #FAF3DD;
     width: 3em;
@@ -51,6 +58,7 @@ h1 {
     box-shadow: none;
     border-radius: 1em;
     border: 0.1em solid;
+    border-color: #DB742B;
     &:hover {
         background-color: #502314;
         color: #FAF3DD;
@@ -60,3 +68,4 @@ h1 {
         color:#FAF3DD;
     }
 }
+
