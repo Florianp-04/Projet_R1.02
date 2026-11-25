@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "fontNormal";
+    src: url(../policeMontSerrat/MontserratAlternates-Regular.ttf);
+}
+
 h1 {
     height: 3em;
     background-color: #3D3D3D;
@@ -79,6 +84,7 @@ section > form > h2 {
     border: 0.2em solid;
     border-radius: 1em;
     border-color: #DB742B;
+    width: 75%;
 
     & h2 {
         display: grid;
@@ -131,5 +137,52 @@ section > form > h2 {
 .formF3 {
     & > label {
         display: none;
+    }
+}
+
+.endPanierButton {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.formValiderPanier {
+    width: 7em;
+    height: auto;
+    background-color: #FAF3DD;
+    border: 0.1em solid;
+    border-radius: 0.3em;
+    border-color: #502314;
+    color: #3D3D3D;
+    display: grid;
+    min-height: 2em;
+    text-align: center;
+
+    &:hover {
+        
+        border-color: #FAF3DD;
+        background-color: #502314;
+        color: #FAF3DD;
+        
+        
+        
+    }
+}
+
+.formAvisButton {
+    font-family: fontNormal;
+    border: 0.2em solid;
+    border-radius: 0.5em;
+    border-color: #502314;
+    color: #3D3D3D;
+    background-color: #FAF3DD;
+    width: auto;
+
+    &:hover {
+        border-color: #FAF3DD;
+        background-color: #502314;
+        color: #FAF3DD;
     }
 }
