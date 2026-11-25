@@ -87,6 +87,38 @@
                     </li>
                 </ul>
             </form>
+            <button popovertarget="popupAvis">Laisser un commentaire</button>
+            
+            <form id="popupAvis" popover>
+                <h2>Formulaire</h2>
+                <fieldset class="formF1">
+                    <legend>Nom complet :</legend>
+
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" placeholder="NOM">
+
+                    <label for="prenom">Prénom</label>
+                    <input type="text" name="prenom" placeholder="Prénom">
+                </fieldset>
+                <fieldset class="formF2">
+                    <legend>Vos informations :</legend>
+
+                    <label for="tel">Numéro de téléphone</label>
+                    <input type="tel" name="tel" placeholder="06 01 02 70 60">
+
+                    <label for="mail">Adresse mail</label>
+                    <input type="email" name="mail" placeholder="Email">
+                </fieldset>
+                <fieldset class="formF3">
+                    <legend>Commentaire</legend>
+                    <label for="avis">Commentaire</label>
+                    <input type="text" name="avis" placeholder="Laissez votre commentaire ici">
+                </fieldset>
+                <input type="reset" id="formButtonReset">
+                <input type="submit" id="formButtonSend">
+
+            </form>
+            
         </section>
 
         <footer>
