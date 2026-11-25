@@ -92,6 +92,54 @@ body {
     align-items: center;
 }
 
+#headerMobButton {
+    display: none;
+}
+
+@media (max-width: 415px) {
+
+    .headerNavli {
+        padding-right: 0;
+    }
+    #headerMobButton {
+        display: block;
+        margin-left: 1em;
+        color: #FAF3DD;
+        border: none;
+        background: transparent;
+        font-size: 3em;
+
+        &:hover {
+            color: #502314;
+        }
+    }
+    
+    .headerNavul {
+        & > li {
+            display: none;
+        }
+        display: none;
+    }
+
+    #headerNavulJS.open {
+        background-color: #3D3D3D;
+        padding: 3px 3px 3px 3px;
+        margin-left: 1em;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 15px;
+        right: 55px;
+        gap: 5px;
+        width: auto;
+        & > li {
+            display: block;
+            width: 6em;
+        }
+    }
+}
+
 footer {
     background-color: #198737;
     height: 10%;

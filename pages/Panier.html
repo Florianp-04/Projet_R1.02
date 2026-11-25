@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/global.css">
         <link rel="stylesheet" href="../css/panier.css">
         <script src="../js/panier.js" defer></script>
+        <script src="../js/global.js" defer></script>
     </head>
 
     <body>
@@ -16,14 +17,16 @@
                 <ul>
                     <li><a href="../index.html"><img class="headerLogo" src="../img/LogoGrokeba.png" alt="Logo de Grokeba"></a></li>
                     <li class="headerNavli">
-                        <ul>
+                        <ul class="headerNavul" id="headerNavulJS">
                             <li class="headerNavButton"><a href="../index.html" class="headerNavButtonAccueil">Accueil</a></li>
                             <li class="headerNavButton"><a href="Magasin.html" class="headerNavButtonMagasin">Magasin</a></li>
                             <li class="headerNavButton"><a href="Panier.html" class="headerNavButtonPanier">Panier</a></li>
                         </ul>
                     </li>
+                    <li><button type="button" id="headerMobButton">☰</button></li>
                 </ul>
             </nav>
+            
         </header>
 
         <section>
