@@ -55,6 +55,8 @@ h1 {
 
 .imgTextBoutons {
     width: 90%;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 .boutonPlusMin {
@@ -127,8 +129,9 @@ h1 {
 
 @media (min-width: 750px) {
     .imgTextBoutons {
-        padding-top: 4em;
-        padding-left: 4em;
+        padding: 4em;
+        margin-top: 4em;
+        margin-bottom: 4em;
     }
 
     .imgText {
