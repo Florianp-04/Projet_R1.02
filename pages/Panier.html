@@ -15,6 +15,8 @@
     </head>
 
     <body>
+
+        <!-- HEADER de la page -->
         <header id="header">
             <nav class="headerNav">
                 <ul>
@@ -33,19 +35,30 @@
             
         </header>
 
+        <!-- Début du corps de la page -->
         <section>
+
+            <!-- Présentation du sujet -->
             <h1>VOTRE PANIER</h1>
             <form>
+
+                <!-- Formulaire pour ajouter au panier -->
                 <h2>Vos produits</h2>
                 <ul class="panierFormUl">
                     <li>
                         <div class="imgTextBoutons">
+
+                            <!-- image du produit -->
                             <img src="../img/Salade.webp" class="panierFormImg" alt="Image de salades">
                             <div class="textBoutons">
+
+                                <!-- description du produit -->
                                 <h3>Salades</h3>
                                 <p>
                                     Une salade fraiche, tout juste cueillit avant de vous être livrée.
                                 </p>
+
+                                <!-- menu intuitif pour augmenter ou réduire la quantité du produit à ajouter au panier -->
                                 <div class="deuxBoutons">
                                     <fieldset class="boutonPlusMin">
                                         <button type="button" class="panierFormButton" id="buttonMinusSalade">-</button>
@@ -60,12 +73,18 @@
                     </li>
                     <li class="panierFormli">
                         <div class="imgTextBoutons">
+
+                            <!-- image du produit -->
                             <img src="../img/Tomates.webp" class="panierFormImg" alt="Image de tomates">
                             <div class="textBoutons">
+
+                                <!-- description du produit -->
                                 <h3>Tomates</h3>
                                 <p>
                                     Des tomates de bonnes qualités qui ont du goût.                         
                                 </p>
+
+                                <!-- menu intuitif pour augmenter ou réduire la quantité du produit à ajouter au panier -->
                                 <div class="deuxBoutons">
                                     <fieldset class="boutonPlusMin">
                                         <label for="valTomates"></label>
@@ -82,12 +101,18 @@
                     </li>
                     <li class="panierFormli">
                         <div class="imgTextBoutons">
+
+                            <!-- image du produit -->
                             <img src="../img/Oignons.webp" class="panierFormImg" alt="Image d'oignons">
                             <div class="textBoutons">
+
+                                <!-- description du produit -->
                                 <h3>Oignons</h3>
                                 <p>
                                     Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
                                 </p>
+
+                                <!-- menu intuitif pour augmenter ou réduire la quantité du produit à ajouter au panier -->
                                 <div class="deuxBoutons">
                                     <fieldset class="boutonPlusMin">
                                         <label for="valOignons"></label>
@@ -102,11 +127,18 @@
                 </ul>
             </form>
             <div class="endPanierButton">
+
+                <!-- Bouton pour ouvrir le popup formulaire pour laisser son avis -->
                 <button class="formAvisButton" popovertarget="popupAvis">Laisser un commentaire</button>
+
+                <!-- Bouton pour valider son panier !!!!!!!!!! -->
                 <button class="formAvisButton" popovertarget="surprise">Valider le panier</button>
             </div>
+
+            <!-- MYSTÈRE -->
             <img src="../img/videocourte.gif" id="surprise" popover alt="petite video temporaire">
             
+            <!-- Formulaire pour laisser son avis -->
             <form id="popupAvis" popover action="mailto:grokeba@gmail.com" method="post" enctype="text/plain">
                 <h2>Formulaire</h2>
                 <fieldset class="formF1">
@@ -135,7 +167,11 @@
                 <input type="submit" class="formButtonReset">
             </form>
         </section>
+
+        <!-- Bouton pour retourner au haut de la page -->
         <a id="top" href="#header">TOP</a>
+
+        <!-- FOOTER de la page -->
         <footer>
             <img id="footerNavLogo" src="../img/LogoGrokeba.webp" alt="Logo de Grokeba">
 
