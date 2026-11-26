@@ -34,11 +34,11 @@ section > form > h2 {
     list-style: none;
     & > li {
         
-        & > figure {
+        & > div {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-            & > figcaption {
+            & > div {
                 flex-grow: 2;
                 width: 75%;
             }
@@ -46,6 +46,7 @@ section > form > h2 {
             & > fieldset {
                 margin-top: 1em;
                 display: flex;
+                width: auto;
                 align-self: center;
                 align-items: baseline;
                 flex-wrap: nowrap;
