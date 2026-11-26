@@ -119,3 +119,19 @@ h1 {
 .boutonPlusMin{
     background-color: #FAF3DD;
 }
+
+#top{
+    background-color: #FAF3DD;
+    color:#3D3D3D;
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    border-radius: 50px;
+    padding: 1em;
+}
+
+#top:hover{
+    background-color: #502314;
+    color:#FAF3DD
+}

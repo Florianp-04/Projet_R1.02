@@ -186,3 +186,18 @@ section > form > h2 {
         color: #FAF3DD;
     }
 }
+
+#top{
+    background-color: #3D3D3D;
+    color:#FAF3DD;
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    border-radius: 50px;
+    padding: 1em;
+}
+
+#top:hover{
+    background-color: #502314;
+}
