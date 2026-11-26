@@ -1,0 +1,121 @@
+body {
+    background-color: #3D3D3D;
+    color: #FAF3DD;
+}
+
+h1 {
+    display: none;
+}
+
+.startPage {
+    padding-left: 2%;
+}
+
+
+.boutonPanier {
+    background-color: #FAF3DD;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid #DB742B;
+    color: #3D3D3D;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+
+    &:hover {
+        background-color: #502314;
+        color: #FAF3DD;
+        border-color : #502314;
+    }
+}
+
+#titleMagasin {
+    width: auto;
+    height: 3em;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #3D3D3D;
+    color: #FAF3DD;
+    margin-top: 1em;
+    display: grid;
+    min-height: 3em;
+    align-items: center;
+    padding-left: 0.5em;
+}
+
+.panierFormImg {
+    width: 9em;
+    height: 9em;
+    margin-right: 1em;
+    border-radius: 10px;
+}
+
+.panierFormUl {
+    width: 80%;
+    list-style: none;
+    & > li {
+        
+        & > figure {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+            & > figcaption {
+                flex-grow: 2;
+                width: 75%;
+            }
+
+            & > fieldset {
+                margin-top: 1em;
+                display: flex;
+                align-self: center;
+                align-items: baseline;
+                flex-wrap: nowrap;
+                border-radius: 0.5em;
+                border: 0.1em solid;
+                border-color: #DB742B;
+            }
+        }
+    } 
+}
+
+.panierFormVal {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    font-size: 1em;
+    width: 5em;
+    align-self: center;
+}
+.panierFormButton {
+    background-color: #FAF3DD;
+    color: #3D3D3D;
+    width: 3em;
+    height: 3em;
+    box-shadow: none;
+    border-radius: 1em;
+    border: 0.1em solid;
+    border-color: #DB742B;
+    &:hover {
+        background-color: #502314;
+        color: #FAF3DD;
+    }
+    &:active {
+        background-color: #DB742B;
+        color:#FAF3DD;
+    }
+}
+
+.magasinPanierButton {
+    background-color: #FAF3DD;
+    width: 10em;
+    height: 4em;
+    margin-left: 3em;
+    margin-top: 1.5em;
+    color: #3D3D3D;
+}
+
+.boutonPlusMin{
+    background-color: #FAF3DD;
+}
