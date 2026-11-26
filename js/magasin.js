@@ -51,3 +51,22 @@ buttonMinusOignons.addEventListener("click", () => {
         valOignons.value = Number(valOignons.value) - 1;
     }
 });
+
+const buttonSwitchMagasin = document.querySelector("#buttonLightDarkMagasin");
+
+let actif = false;
+
+
+buttonSwitchMagasin.addEventListener("click", () => {
+    actif = !actif;
+
+    buttonSwitchMagasin.textContent = actif ? "LIGHT" : "DARK";
+    buttonSwitchMagasin.setAttribute("aria-pressed", String(actif));
+
+    if (actif) {
+        document.querySelector("#magasinCSS").href = "../css/dark_magasin.css"
+        
+    } else {
+        document.querySelector("#magasinCSS").href = "../css/magasin.css"
+    }
+});

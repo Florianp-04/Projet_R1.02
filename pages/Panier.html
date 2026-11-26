@@ -6,7 +6,7 @@
         <title>grokeba</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/global.css">
-        <link rel="stylesheet" href="../css/panier.css">
+        <link rel="stylesheet" href="../css/panier.css" id="panierCSS">
         <script src="../js/panier.js" defer></script>
         <script src="../js/global.js" defer></script>
     </head>
@@ -16,6 +16,7 @@
             <nav class="headerNav">
                 <ul>
                     <li><a href="../index.html"><img class="headerLogo" src="../img/LogoGrokeba.png" alt="Logo de Grokeba"></a></li>
+                    <li><button type="button" class="buttonLightDark" id="buttonLightDarkPanier" aria-pressed="false">DARK</button></li>
                     <li class="headerNavli">
                         <ul class="headerNavul" id="headerNavulJS">
                             <li class="headerNavButton"><a href="../index.html" class="headerNavButtonAccueil">Accueil</a></li>
@@ -59,9 +60,9 @@
                                 Des tomates de bonnes qualités qui ont du goût.                         
                             </figcaption>
                             <fieldset>
-                                <label></label>
+                                <label for="valTomates"></label>
                                 <button type="button" class="panierFormButton" id="buttonMinusTomates">-</button>
-                                <input type="text" class="panierFormVal" value="0" id="valTomates">
+                                <input type="text" name="valTomates" class="panierFormVal" value="0" id="valTomates">
                                 <button type="button" class="panierFormButton" id="buttonPlusTomates">+</button>
                             </fieldset>
                         </figure>
@@ -77,9 +78,9 @@
                                 Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
                             </figcaption>
                             <fieldset>
-                                <label></label>
+                                <label for="valOignons"></label>
                                 <button type="button" class="panierFormButton" id="buttonMinusOignons">-</button>
-                                <input type="text" class="panierFormVal" value="0" id="valOignons">
+                                <input type="text" name="valOignons" class="panierFormVal" value="0" id="valOignons">
                                 <button type="button" class="panierFormButton" id="buttonPlusOignons">+</button>
                             </fieldset>
                         </figure>
@@ -89,11 +90,11 @@
             </form>
             <div class="endPanierButton">
                 <button popovertarget="popupAvis" class="formAvisButton">Laisser un commentaire</button>
-                <a class="formValiderPanier">Valider le panier</a>
+                <button class="formValiderPanier" popovertarget="surprise">Valider le panier</button>
             </div>
+            <img src="../img/videocourte.gif" id="surprise" popover>
             
-            
-            <form id="popupAvis" popover>
+            <form id="popupAvis" popover action="mailto:grokeba@gmail.com" method="post" enctype="text/plain">
                 <h2>Formulaire</h2>
                 <fieldset class="formF1">
                     <legend>Nom complet :</legend>

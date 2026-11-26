@@ -51,3 +51,22 @@ buttonMinusOignons.addEventListener("click", () => {
         valOignons.value = Number(valOignons.value) - 1;
     }
 });
+
+const buttonSwitchPanier = document.querySelector("#buttonLightDarkPanier");
+
+let actif = false;
+
+
+buttonSwitchPanier.addEventListener("click", () => {
+    actif = !actif;
+
+    buttonSwitchPanier.textContent = actif ? "LIGHT" : "DARK";
+    buttonSwitchPanier.setAttribute("aria-pressed", String(actif));
+
+    if (actif) {
+        document.querySelector("#panierCSS").href = "../css/dark_panier.css"
+        
+    } else {
+        document.querySelector("#panierCSS").href = "../css/panier.css"
+    }
+});

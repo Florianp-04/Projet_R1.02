@@ -45,6 +45,24 @@ body {
     gap: 5%;
     
 }
+
+.buttonLightDark {
+    width: 6em;
+    height: 2em;
+    background-color: #FAF3DD;
+    border: 0.1em solid;
+    border-radius: 0.3em;
+    border-color: #502314;
+
+    &:hover {
+        border: 0.1rem solid;
+        border-radius: 0.3em;
+        border-color: #FAF3DD;
+        background-color: #502314;  
+        color: #FAF3DD;
+    }
+}
+
 .headerNavButton {
     width: 6em;
     height: 2em;
