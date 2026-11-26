@@ -3,6 +3,10 @@
     src: url(../policeMontSerrat/MontserratAlternates-Regular.ttf);
 }
 
+ul {
+    list-style: none;
+}
+
 h1 {
     height: 3em;
     background-color: #3D3D3D;
@@ -20,38 +24,7 @@ section > form > h2 {
 .panierFormImg {
     width: 9em;
     height: 9em;
-}
-
-.panierFormUl {
-    width: 80%;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    & > li {
-        
-        & > div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-            & > div {
-                flex-grow: 2;
-                width: 75%;
-            }
-
-            & > fieldset {
-                margin-top: 1em;
-                width: auto;
-                display: flex;
-                align-self: center;
-                align-items: baseline;
-                flex-wrap: nowrap;
-                border-radius: 0.5em;
-                border: 0.1em solid;
-                border-color: #DB742B;
-            }
-        }
-    } 
+    border-radius: 10px;
 }
 
 .panierFormVal {
@@ -62,6 +35,24 @@ section > form > h2 {
     font-size: 1em;
     width: 5em;
     align-self: center;
+}
+
+.imgTextBoutons {
+    width: 90%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.deuxBoutons {
+    display: flex;
+    justify-content: center;
+}
+
+.boutonPlusMin {
+    border: 0.1em solid #DB742B;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
 }
 
 .panierFormButton {
@@ -92,62 +83,70 @@ section > form > h2 {
 
     & h2 {
         display: grid;
-        min-height: 2em;
+        min-height: 4em;
         align-items: center;
         padding-left: 0.5em;
         background-color: #3D3D3D;
         color: #F0E9D3;
         width: 100%;
-        font-weight: bold;
-        height: 2em;
+        font-weight:bolder;
+        height: 3em;
     }
 
-    
+    & legend {
+        height: 2em;
+        font-size: 1.2em;
+    }
 }
 
-#formButtonReset {
+.formButtonReset {
+    padding: 0.5em;
+    margin: 1em;
     color: #3D3D3D;
     background-color: #F0E9D3;
-    border: 0.1em solid;
-    border-color: #502314;
-    border-radius: 1em;
+    border: 0.1em solid #DB742B;
+    border-radius: 10px;
 
     &:hover {
         color: #F0E9D3;
         background-color: #502314;
-    }
-}
-#formButtonSend {
-    color: #F0E9D3;
-    background-color: #DB742B;
-    border: 0.1em solid;
-    border-color: #502314;
-    border-radius: 1em;
-
-    &:hover {
-        color: #F0E9D3;
-        background-color: #502314;
+        border: 0.1em solid #502314;
     }
 }
 
 .formF1 {
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    border: 0.2em solid #3D3D3D;
 }
 .formF2 {
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    border: 0.2em solid #3D3D3D;
 }
 .formF3 {
     & > label {
         display: none;
     }
+    border-radius: 10px;
+    border: 0.2em solid #3D3D3D;
+}
+
+.text {
+    width: 100%;
+    border: 0.1em solid #DB742B;
+    border-radius: 5px;
+    margin-bottom: 1em;
 }
 
 .endPanierButton {
     display: flex;
+    text-align: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: column;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -169,20 +168,18 @@ section > form > h2 {
         border-color: #FAF3DD;
         background-color: #502314;
         color: #FAF3DD;
-        
-        
-        
     }
 }
 
 .formAvisButton {
-    font-family: fontNormal;
-    border: 0.2em solid;
-    border-radius: 0.5em;
-    border-color: #502314;
+    width: 90%;
+    border: 0.2em solid #DB742B;
+    border-radius: 10px;
     color: #3D3D3D;
     background-color: #FAF3DD;
-    width: auto;
+    margin : 1em 2em;
+    padding: 1em;
+
 
     &:hover {
         border-color: #FAF3DD;
@@ -204,4 +201,36 @@ section > form > h2 {
 
 #top:hover{
     background-color: #502314;
+}
+
+@media (min-width: 750px) {
+    .imgTextBoutons {
+        display: flex;
+        flex-direction: row;
+        margin-left: 4.5em;
+        margin-right: 1em;
+        width: 90%;
+    }
+
+    .textBoutons {
+        margin-left: 2em;
+        width: 100%;
+    }
+
+    .boutonPlusMin {
+        width: 15em;
+    }
+
+    .magasinPanierButton {
+        width: 20%;
+    }
+
+    .endPanierButton {
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .formAvisButton {
+        width: 45%;
+    }    
 }
