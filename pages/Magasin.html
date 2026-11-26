@@ -41,16 +41,18 @@
 
             <h2 id="titleMagasin" >NOS PRODUITS</h2>
 
-            <form>
+            <form id="formPanier">
                 <ul class="panierFormUl">
                     <li>
-                        <figure>
+                        <div>
                             <img src="../img/Salade.webp" class="panierFormImg" alt="Image de salades">
-                            <figcaption>
+                            <div>
                                 <h3>Salades</h3>
-                                Une salade fraiche, tout juste cueillit avant de vous être livrée.
-                            </figcaption>
-                            <fieldset class="boutonPlusMin">
+                                <p>
+                                    Une salade fraiche, tout juste cueillit avant de vous être livrée.
+                                </p>
+                            </div>
+                            <fieldset form="formPanier" class="boutonPlusMin">
                                 <button type="button" class="panierFormButton" id="buttonMinusSalade">-</button>
                                 <label for="valSalade"></label>
                                 <input type="text" name="valSalade" value="0" class="panierFormVal" id="valSalade">
@@ -58,43 +60,47 @@
                             </fieldset>
                             <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
 
-                        </figure>
+                        </div>
 
                     </li>
                     <li class="panierFormli">
                         
-                        <figure>
+                        <div>
                             <img src="../img/Tomates.webp" class="panierFormImg" alt="Image de tomates">
-                            <figcaption>
+                            <div>
                                 <h3>Tomates</h3>
-                                Des tomates de bonnes qualités qui ont du goût.                         
-                            </figcaption>
-                            <fieldset class="boutonPlusMin">
+                                <p>
+                                    Des tomates de bonnes qualités qui ont du goût.                         
+                                </p>
+                            </div>
+                            <fieldset form="formPanier" class="boutonPlusMin">
                                 <button type="button" class="panierFormButton" id="buttonMinusTomates">-</button>
                                 <input type="text" class="panierFormVal" value="0" id="valTomates">
                                 <button type="button" class="panierFormButton" id="buttonPlusTomates">+</button>
                             </fieldset>
                             <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
 
-                        </figure>
+                        </div>
                         
                         
                     </li>
                     <li class="panierFormli">
                         
-                        <figure>
+                        <div>
                             <img src="../img/Oignons.webp" class="panierFormImg" alt="Image d'oignons">
-                            <figcaption>
+                            <div>
                                 <h3>Oignons</h3>
-                                Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
-                            </figcaption>
-                            <fieldset class="boutonPlusMin">
+                                <p>
+                                    Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
+                                </p>
+                            </div>
+                            <fieldset form="formPanier" class="boutonPlusMin">
                                 <button type="button" class="panierFormButton" id="buttonMinusOignons">-</button>
                                 <input type="text" class="panierFormVal" value="0" id="valOignons">
                                 <button type="button" class="panierFormButton" id="buttonPlusOignons">+</button>
                             </fieldset>
                             <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
-                        </figure>
+                        </div>
                         
                     </li>
                 </ul>

@@ -39,61 +39,67 @@
                 <h2>Vos produits</h2>
                 <ul class="panierFormUl">
                     <li>
-                        <figure>
+                        <div>
                             <img src="../img/Salade.webp" class="panierFormImg" alt="Image de salades">
-                            <figcaption>
+                            <div>
                                 <h3>Salades</h3>
-                                Une salade fraiche, tout juste cueillit avant de vous être livrée.
-                            </figcaption>
+                                <p>
+                                    Une salade fraiche, tout juste cueillit avant de vous être livrée.
+                                </p>
+                            </div>
                             <fieldset>
                                 <button type="button" class="panierFormButton" id="buttonMinusSalade">-</button>
                                 <label for="valSalade"></label>
                                 <input type="text" name="valSalade" value="0" class="panierFormVal" id="valSalade">
                                 <button type="button" class="panierFormButton" id="buttonPlusSalade">+</button>
                             </fieldset>
-                        </figure>
+                        </div>
 
                     </li>
                     <li class="panierFormli">
                         
-                        <figure>
+                        <div>
                             <img src="../img/Tomates.webp" class="panierFormImg" alt="Image de tomates">
-                            <figcaption>
+                            <div>
                                 <h3>Tomates</h3>
-                                Des tomates de bonnes qualités qui ont du goût.                         
-                            </figcaption>
+                                <p>
+                                    Des tomates de bonnes qualités qui ont du goût.                         
+                                </p>
+                            </div>
                             <fieldset>
                                 <label for="valTomates"></label>
                                 <button type="button" class="panierFormButton" id="buttonMinusTomates">-</button>
                                 <input type="text" name="valTomates" class="panierFormVal" value="0" id="valTomates">
                                 <button type="button" class="panierFormButton" id="buttonPlusTomates">+</button>
                             </fieldset>
-                        </figure>
+                        </div>
                         
                         
                     </li>
                     <li class="panierFormli">
                         
-                        <figure>
+                        <div>
                             <img src="../img/Oignons.webp" class="panierFormImg" alt="Image d'oignons">
-                            <figcaption>
+                            <div>
                                 <h3>Oignons</h3>
-                                Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
-                            </figcaption>
+                                <p>
+                                    Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
+                                </p>
+                            </div>
                             <fieldset>
                                 <label for="valOignons"></label>
                                 <button type="button" class="panierFormButton" id="buttonMinusOignons">-</button>
                                 <input type="text" name="valOignons" class="panierFormVal" value="0" id="valOignons">
                                 <button type="button" class="panierFormButton" id="buttonPlusOignons">+</button>
                             </fieldset>
-                        </figure>
+                        </div>
                         
                     </li>
                 </ul>
             </form>
             <div class="endPanierButton">
                 <button popovertarget="popupAvis" class="formAvisButton">Laisser un commentaire</button>
-                <button class="formValiderPanier" popovertarget="surprise">Valider le panier</button>
+                <button class="formAvisButton" popovertarget="surprise">Valider le panier</button>
             </div>
             <img src="../img/videocourte.gif" id="surprise" popover alt="petite video temporaire">
             
