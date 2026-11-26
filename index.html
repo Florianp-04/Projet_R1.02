@@ -14,11 +14,17 @@
     </head>
 
     <body>
+        <!-- Tout ce qui est du HEADER -->>
         <header id="header">
             <nav class="headerNav">
                 <ul>
+                    <!-- Logo qui fait partie de la nav pour retourner à l'index / accueil -->
                     <li><a href="index.html"><img class="headerLogo" src="img/LogoGrokeba.webp" alt="Logo de Grokeba"></a></li>
+                    
+                    <!-- Bouton pour changer de light à dark -->
                     <li><button type="button" class="buttonLightDark" id="buttonLightDarkIndex" aria-pressed="false">DARK</button></li>
+                    
+                    <!-- Tableau incluant toutes les pages du site (s'affiche uniquement sur ordi ou grand écran) -->
                     <li class="headerNavli">
                         <ul class="headerNavul" id="headerNavulJS">
                             <li class="headerNavButton"><a href="index.html" class="headerNavButtonAccueil">Accueil</a></li>
@@ -26,20 +32,27 @@
                             <li class="headerNavButton"><a href="pages/Panier.html" class="headerNavButtonPanier">Panier</a></li>
                         </ul>
                     </li>
+
+                    <!-- Bouton qui apparait sur petit écran / téléphone, pour afficher le menu des pages -->
                     <li><button type="button" id="headerMobButton">☰</button></li>
                 </ul>
             </nav>
         </header>
 
-        
+        <!-- Début du vrai contenu de la page index -->
+
         <section id="APropos">
+            <!-- Introduction de la page -->
             <h1>A propos de nous</h1>
             <p> Chez nous, vous pouvez acheter en gros tous les produits nécessaires à la production de kebab.</p>
+            
+            <!-- Bouton qui redirige vers le magasin -->
             <a class="boutonPanier" href="pages/Magasin.html">Remplissez votre panier</a>
         </section>
         
         <img id="imgBanderole" src="img/BannièreGrokeba.webp" alt="banderole kebab a generer">
         
+        <!-- Présentation de quelques produits du magasin -->
         <section id="produitsPopulaires">
             <h2>VOICI NOS PRODUITS LES PLUS POPULAIRES</h2>
             <ul id="flexProduits">
@@ -61,6 +74,7 @@
             </ul>
         </section>
 
+        <!-- Section présentant la provenance de nos produits -->
         <section id="provenanceProduits">
             <ul>
                 <li class="provenance">
@@ -85,6 +99,7 @@
             <img id ="imgChampSalades" src="img/ChampSalades.webp" alt="image de provenance des produits">
         </section>
 
+        <!-- Petite vidéo tuto galette -->
         <section id = "video">
             <h2>COMMENT FAIRE SA GALETTE A KEBAB</h2>
             <video id = "vid" controls>
@@ -95,6 +110,7 @@
 
         </section>
 
+        <!-- Photo d'exemple de réalisation de client -->
         <section id="creationClients">
             <h2>CREATION DE NOS CLIENTS</h2>
             <ul id="listeCreaClient">
@@ -107,6 +123,7 @@
             </ul>
         </section>
 
+        <!-- Section avis de la page  -->
         <section id="avisClients">
             <h2>NOS AVIS</h2>
             <ul id = "listAvis">
@@ -129,6 +146,8 @@
                     </ul>
                 </li>
                 <li class = "avis">
+
+                    <!-- SVP MONSIEUR -->
                     <p>"Aller c'est bon, je vous met 18 :)"</p>
                     <ul class = "imageTextAvis">
                         <li class = "imgAvisTaille">
@@ -166,11 +185,16 @@
                 </li>
             </ul>
         </section>
+
+        <!-- Bouton pour remonter en haut de la page -->
         <a id="top" href="#header">TOP</a>
+
+        <!-- Le footer de nos pages -->
         <footer>
             <img id="footerNavLogo" src="img/LogoGrokeba.webp" alt="Logo de grokeba">
 
             <div class="footerDivNav footerDivRS">
+                <!-- Partie réseaux sociaux -->
                 <h2>Réseaux Sociaux</h2>
                 <nav class="footerNavRS">
                     <ul>
@@ -182,6 +206,7 @@
             </div>
             
             <div class="footerDivNav footerDivSite">
+                <!-- Lien de navigation sur nos pages -->
                 <h2>Visitez notre site</h2>
                 <nav class="footerNavSite">
                     <ul>
