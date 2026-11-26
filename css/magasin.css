@@ -1,3 +1,132 @@
+ul {
+    list-style: none;
+}
+h1 {
+    display: none;
+}
+
+.startPage {
+    padding-left: 2%;
+}
+
+.boutonPanier {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid #DB742B;
+    color: #3D3D3D;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
+
+    &:hover {
+        background-color: #502314;
+        color: #FAF3DD;
+        border-color : #502314;
+    }
+}
+
+#titleMagasin {
+    width: auto;
+    height: 3em;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #3D3D3D;
+    color: #FAF3DD;
+    margin-top: 1em;
+    display: grid;
+    min-height: 3em;
+    align-items: center;
+    padding-left: 0.5em;
+}
+
+@media (max-width: 700px) {
+    .boutonPanier {
+        width: 80%;
+    }
+}
+
+.panierFormImg {
+    width: 9em;
+    height: 9em;
+    margin-right: 1em;
+    border-radius: 10px;
+}
+
+.imgTextBoutons {
+    width: 90%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.boutonPlusMin {
+    border: 0.1em solid #DB742B;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    padding: 1em;
+}
+
+.deuxBoutons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imgText {
+    display: flex;
+    flex-direction: row;
+}
+
+.panierFormVal {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    font-size: 1em;
+    width: 5em;
+    align-self: center;
+}
+.panierFormButton {
+    background-color: #FAF3DD;
+    color: #3D3D3D;
+    width: 3em;
+    height: 3em;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 0.1em solid;
+    border-color: #DB742B;
+    &:hover {
+        background-color: #502314;
+        color: #FAF3DD;
+    }
+    &:active {
+        background-color: #DB742B;
+        color:#FAF3DD;
+    }
+}
+
+.magasinPanierButton {
+    width: 100%;
+    margin-top: 1.5em;
+    color: #3D3D3D;
+}
+
+#top{
+    background-color: #3D3D3D;
+    color:#FAF3DD;
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    border-radius: 50px;
+    padding: 1em;
+}
+
+#top:hover{
+    background-color: #502314;
+}
+
 @media (min-width: 750px) {
     .imgTextBoutons {
         padding: 4em;
