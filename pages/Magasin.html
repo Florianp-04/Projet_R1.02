@@ -6,7 +6,7 @@
         <title>grokeba</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/global.css">
-        <link rel="stylesheet" href="../css/magasin.css">
+        <link rel="stylesheet" href="../css/dark_magasin.css">
         <script src="../js/magasin.js" defer></script>
         <script src="../js/global.js" defer></script>
     </head>
@@ -47,7 +47,7 @@
                                 <h3>Salades</h3>
                                 Une salade fraiche, tout juste cueillit avant de vous être livrée.
                             </figcaption>
-                            <fieldset>
+                            <fieldset class="boutonPlusMin">
                                 <button type="button" class="panierFormButton" id="buttonMinusSalade">-</button>
                                 <label for="valSalade"></label>
                                 <input type="text" name="valSalade" value="0" class="panierFormVal" id="valSalade">
@@ -66,8 +66,7 @@
                                 <h3>Tomates</h3>
                                 Des tomates de bonnes qualités qui ont du goût.                         
                             </figcaption>
-                            <fieldset>
-                                <label></label>
+                            <fieldset class="boutonPlusMin">
                                 <button type="button" class="panierFormButton" id="buttonMinusTomates">-</button>
                                 <input type="text" class="panierFormVal" value="0" id="valTomates">
                                 <button type="button" class="panierFormButton" id="buttonPlusTomates">+</button>
@@ -86,8 +85,7 @@
                                 <h3>Oignons</h3>
                                 Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
                             </figcaption>
-                            <fieldset>
-                                <label></label>
+                            <fieldset class="boutonPlusMin">
                                 <button type="button" class="panierFormButton" id="buttonMinusOignons">-</button>
                                 <input type="text" class="panierFormVal" value="0" id="valOignons">
                                 <button type="button" class="panierFormButton" id="buttonPlusOignons">+</button>
