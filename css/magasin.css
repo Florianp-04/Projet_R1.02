@@ -1,139 +1,149 @@
-<!DOCTYPE html>
-<html lang="fr">
+ul {
+    list-style: none;
+}
+h1 {
+    display: none;
+}
 
-    <head>
-        <meta charset="utf-8">
-        <title>grokeba</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Cette page html permet voir les produits que nous avons à la ventre. Il est possible de les ajouter à son panier">
-        <link rel="icon" href="/images/LogoGrokeba.webp" type="image/webp">
-        <link rel="stylesheet" href="../css/global.css">
-        <link rel="stylesheet" href="../css/magasin.css" id="magasinCSS">
-        <script src="../js/magasin.js" defer></script>
-        <script src="../js/global.js" defer></script>
-    </head>
+.startPage {
+    padding-left: 2%;
+}
 
-    <body>
-        <header id="header">
-            <nav class="headerNav">
-                <ul>
-                    <li><a href="../index.html"><img class="headerLogo" src="../img/LogoGrokeba.webp" alt="Logo de Grokeba"></a></li>
-                    <li><button type="button" id="buttonLightDarkMagasin" class="buttonLightDark" aria-pressed="false">DARK</button></li>
-                    <li class="headerNavli">
-                        <ul class="headerNavul" id="headerNavulJS">
-                            <li class="headerNavButton"><a href="../index.html" class="headerNavButtonAccueil">Accueil</a></li>
-                            <li class="headerNavButton"><a href="Magasin.html" class="headerNavButtonMagasin">Magasin</a></li>
-                            <li class="headerNavButton"><a href="Panier.html" class="headerNavButtonPanier">Panier</a></li>
-                        </ul>
-                    </li>
-                    <li><button type="button" id="headerMobButton">☰</button></li>
-                </ul>
-            </nav>
-        </header>
+.boutonPanier {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 2px solid #DB742B;
+    color: #3D3D3D;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 20%;
+    text-align: center;
 
-        <section>
-            <h1>Magasin</h1>
-            <article class="startPage">
-                <h2>Origine Protégé</h2>
-                <p>Poduits locaux, usines proches de chez vous.</p>
-                <a class="boutonPanier" href="Panier.html">Voir le panier</a>
-            </article>
+    &:hover {
+        background-color: #502314;
+        color: #FAF3DD;
+        border-color : #502314;
+    }
+}
 
-            <h2 id="titleMagasin" >NOS PRODUITS</h2>
+#titleMagasin {
+    width: auto;
+    height: 3em;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #3D3D3D;
+    color: #FAF3DD;
+    margin-top: 1em;
+    display: grid;
+    min-height: 3em;
+    align-items: center;
+    padding-left: 0.5em;
+}
 
-            <form id="formPanier">
-                <ul class="panierFormUl">
-                    <li>
-                        <div class="imgTextBoutons">
-                            <img src="../img/Salade.webp" class="panierFormImg" alt="Image de salades">
-                            <div class="textBoutons">
-                                <h3>Salades</h3>
-                                <p>
-                                    Une salade fraiche, tout juste cueillit avant de vous être livrée.
-                                </p>
-                                <div class="deuxBoutons">
-                                    <fieldset form="formPanier" class="boutonPlusMin">
-                                        <button type="button" class="panierFormButton" id="buttonMinusSalade">-</button>
-                                        <label for="valSalade"></label>
-                                        <input type="text" name="valSalade" value="0" class="panierFormVal" id="valSalade">
-                                        <button type="button" class="panierFormButton" id="buttonPlusSalade">+</button>
-                                    </fieldset>
-                                    <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="imgTextBoutons">
-                            <img src="../img/Tomates.webp" class="panierFormImg" alt="Image de salades">
-                            <div class="textBoutons">
-                                <h3>Tomates</h3>
-                                <p>
-                                    Des tomates de qualités qui ont du goût.
-                                </p>
-                                <div class="deuxBoutons">
-                                    <fieldset form="formPanier" class="boutonPlusMin">
-                                        <button type="button" class="panierFormButton" id="buttonMinusTomates">-</button>
-                                        <label for="valSalade"></label>
-                                        <input type="text" name="valTomates" value="0" class="panierFormVal" id="valTomates">
-                                        <button type="button" class="panierFormButton" id="buttonPlusTomates">+</button>
-                                    </fieldset>
-                                    <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="imgTextBoutons">
-                            <img src="../img/Oignons.webp" class="panierFormImg" alt="Image d'oignons">
-                            <div class="textBoutons">
-                                <h3>Oignons</h3>
-                                <p>
-                                    Des oignons parfaits pour la réalisation de kebab, donnant un goût supplémentaire.
-                                </p>
-                                <div class="deuxBoutons">
-                                    <fieldset form="formPanier" class="boutonPlusMin">
-                                        <button type="button" class="panierFormButton" id="buttonMinusOignons">-</button>
-                                        <input type="text" name="valOignons" class="panierFormVal" value="0" id="valOignons">
-                                        <button type="button" class="panierFormButton" id="buttonPlusOignons">+</button>
-                                    </fieldset>
-                                    <button type="button" class="panierFormButton magasinPanierButton">Ajouter au panier</button>
-                                </div>
-                            </div>
-                            
-                        </div>
-                        
-                    </li>
-                </ul>
-            </form>
-        </section>
-        <a id="top" href="#header">TOP</a>
-        <footer>
-            <img id="footerNavLogo" src="../img/LogoGrokeba.webp" alt="Logo de Grokeba">
+@media (max-width: 700px) {
+    .boutonPanier {
+        width: 80%;
+    }
+}
 
-            <div class="footerDivNav footerDivRS">
-                <h2>Réseaux Sociaux</h2>
-                <nav class="footerNavRS">
-                    <ul>
-                        <li id="discord"><a href="https://discord.gg/8NQf4CaFmV">Discord</a></li>
-                        <li id="instagram"><a href="https://fr.wikipedia.org/wiki/Instagram">Instagram</a></li>
-                        <li id="facebook"><a href="https://fr.wikipedia.org/wiki/Facebook">Facebook</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-            <div class="footerDivNav footerDivSite">
-                <h2>Visitez notre site</h2>
-                <nav class="footerNavSite">
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="Magasin.html">Magasin</a></li>
-                        <li><a href="Panier.html">Panier</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-        </footer>
-    </body>
+.panierFormImg {
+    width: 9em;
+    height: 9em;
+    margin-right: 1em;
+    border-radius: 10px;
+}
 
-</html>
+.imgTextBoutons {
+    width: 90%;
+}
+
+.boutonPlusMin {
+    border: 0.1em solid #DB742B;
+    border-radius: 10px;
+    width: 90%;
+    text-align: center;
+    padding: 1em;
+}
+
+.deuxBoutons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.imgText {
+    display: flex;
+    flex-direction: row;
+}
+
+.panierFormVal {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+    font-size: 1em;
+    width: 5em;
+    align-self: center;
+}
+.panierFormButton {
+    background-color: #FAF3DD;
+    color: #3D3D3D;
+    width: 3em;
+    height: 3em;
+    box-shadow: none;
+    border-radius: 10px;
+    border: 0.1em solid;
+    border-color: #DB742B;
+    &:hover {
+        background-color: #502314;
+        color: #FAF3DD;
+    }
+    &:active {
+        background-color: #DB742B;
+        color:#FAF3DD;
+    }
+}
+
+.magasinPanierButton {
+    width: 100%;
+    margin-top: 1.5em;
+    color: #3D3D3D;
+}
+
+#top{
+    background-color: #3D3D3D;
+    color:#FAF3DD;
+    text-decoration: none;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    border-radius: 50px;
+    padding: 1em;
+}
+
+#top:hover{
+    background-color: #502314;
+}
+
+@media (min-width: 750px) {
+    .imgTextBoutons {
+        padding-top: 4em;
+        padding-left: 4em;
+    }
+
+    .imgText {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .boutonPlusMin {
+        width: 20%;
+        text-align: center;
+        margin-right: 1em;
+    }
+
+    .magasinPanierButton {
+        width: 20%;
+    }
+}
