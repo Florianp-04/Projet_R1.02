@@ -114,7 +114,7 @@ body {
     display: none;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 700px) {
 
     .headerNavli {
         padding-right: 0;

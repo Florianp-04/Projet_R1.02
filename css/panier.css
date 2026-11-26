@@ -25,6 +25,9 @@ section > form > h2 {
 .panierFormUl {
     width: 80%;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
     & > li {
         
         & > div {

@@ -30,6 +30,12 @@ h1 {
     }
 }
 
+@media (max-width: 700px) {
+    .boutonPanier {
+        width: 80%;
+    }
+}
+
 #titleMagasin {
     width: auto;
     height: 3em;
@@ -54,6 +60,9 @@ h1 {
 .panierFormUl {
     width: 80%;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
     & > li {
         
         & > div {

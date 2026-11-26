@@ -38,14 +38,27 @@ h1 {
     padding-left: 0.5em;
 }
 
+@media (max-width: 700px) {
+    .boutonPanier {
+        width: 80%;
+    }
+}
+
 .panierFormImg {
     width: 9em;
     height: 9em;
+    margin-right: 1em;
+    border-radius: 10px;
 }
+
+
 
 .panierFormUl {
     width: 80%;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
     & > li {
         
         & > div {
@@ -60,6 +73,7 @@ h1 {
             & > fieldset {
                 margin-top: 1em;
                 display: flex;
+                width: auto;
                 align-self: center;
                 align-items: baseline;
                 flex-wrap: nowrap;
@@ -70,6 +84,7 @@ h1 {
         }
     } 
 }
+
 
 .panierFormVal {
     background: transparent;
