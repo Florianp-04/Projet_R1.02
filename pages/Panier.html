@@ -92,7 +92,7 @@
                 <button popovertarget="popupAvis" class="formAvisButton">Laisser un commentaire</button>
                 <button class="formValiderPanier" popovertarget="surprise">Valider le panier</button>
             </div>
-            <img src="../img/videocourte.gif" id="surprise" popover>
+            <img src="../img/videocourte.gif" id="surprise" popover alt="petite video temporaire">
             
             <form id="popupAvis" popover action="mailto:grokeba@gmail.com" method="post" enctype="text/plain">
                 <h2>Formulaire</h2>
@@ -100,24 +100,24 @@
                     <legend>Nom complet :</legend>
 
                     <label for="nom">Nom</label>
-                    <input type="text" name="nom" placeholder="NOM">
+                    <input type="text" name="nom" id="nom" placeholder="NOM">
 
                     <label for="prenom">Prénom</label>
-                    <input type="text" name="prenom" placeholder="Prénom">
+                    <input type="text" name="prenom" id="prenom" placeholder="Prénom">
                 </fieldset>
                 <fieldset class="formF2">
                     <legend>Vos informations :</legend>
 
                     <label for="tel">Numéro de téléphone</label>
-                    <input type="tel" name="tel" placeholder="06 01 02 70 60">
+                    <input type="tel" name="tel" id="tel" placeholder="06 01 02 70 60">
 
                     <label for="mail">Adresse mail</label>
-                    <input type="email" name="mail" placeholder="Email">
+                    <input type="email" name="mail" id="mail" placeholder="Email">
                 </fieldset>
                 <fieldset class="formF3">
                     <legend>Commentaire</legend>
                     <label for="avis">Commentaire</label>
-                    <input type="text" name="avis" placeholder="Laissez votre commentaire ici">
+                    <input type="text" name="avis" id="avis" placeholder="Laissez votre commentaire ici">
                 </fieldset>
                 <input type="reset" id="formButtonReset">
                 <input type="submit" id="formButtonSend">
